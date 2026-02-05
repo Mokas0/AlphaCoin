@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlphaCoin Wallet</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="wallet">
+      <header class="wallet__header">
+        <div>
+          <p class="wallet__label">Balance</p>
+          <h1>12,804.553 ALPHA</h1>
+          <p class="wallet__sub">≈ $31,548.20 USD</p>
+        </div>
+        <div class="wallet__status">
+          <span class="status-dot"></span>
+          <span>Connected to full node: alpha-03</span>
+        </div>
+      </header>
+
+      <section class="wallet__actions">
+        <button class="primary">Send</button>
+        <button class="secondary">Receive</button>
+        <button class="secondary">Swap</button>
+        <button class="secondary">Stake</button>
+      </section>
+
+      <section class="wallet__panel">
+        <h2>Quick Transfer</h2>
+        <form class="transfer-form">
+          <label>
+            Recipient
+            <input type="text" placeholder="alpha1qs8…w9pz" />
+          </label>
+          <label>
+            Amount
+            <input type="number" placeholder="0.00" />
+          </label>
+          <label>
+            Memo
+            <input type="text" placeholder="Invoice #5408" />
+          </label>
+          <button type="button" class="primary">Review Transaction</button>
+        </form>
+      </section>
+
+      <section class="wallet__panel">
+        <div class="panel-header">
+          <h2>Recent Activity</h2>
+          <button class="ghost">View all</button>
+        </div>
+        <ul class="activity">
+          <li>
+            <div>
+              <strong>Payment to Nova Supplies</strong>
+              <span>Smart contract escrow released</span>
+            </div>
+            <span class="amount negative">-2,500 ALPHA</span>
+          </li>
+          <li>
+            <div>
+              <strong>AlphaNode Rewards</strong>
+              <span>Validator payout</span>
+            </div>
+            <span class="amount positive">+128.42 ALPHA</span>
+          </li>
+          <li>
+            <div>
+              <strong>Micro-payment stream</strong>
+              <span>Streaming content creator</span>
+            </div>
+            <span class="amount negative">-3.6 ALPHA</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
